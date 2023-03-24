@@ -132,8 +132,7 @@ We employed Google Colab to train our machine learning model using the data we c
             Step 9: Convert the Trained Model to Tensor Flow Lite
             Step 10: Encode the Model in an Arduino Header File
             Step 11: Classifying IMU Data
-            Step 12
-            : Classifying IMU Data
+            Step 12: Classifying IMU Data
             
             
 
