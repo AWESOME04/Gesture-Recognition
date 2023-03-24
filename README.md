@@ -211,7 +211,15 @@ sudo apt-get install putty putty-tools
 
 After extracting and saving the data using PuTTY, Excel can then be used to for several different applications
 
-Result
+## Project Setbacks
+
+• Directly connecting the Arduino Nano 33 Ble Sense to Excel via the Microsoft Data Streamer was not feasible as it does not support Nano boards mostly. The board is easily detected by the Excel data streamer but unfortunately does not obtain the data from the serial monitor. 
+
+## Possible Solutions
+
+Via a third-party apps such as PuTTY, we managed to both extract and save the data from the Arduino serial monitor to a csv file format that can be accessed by Excel for processing
+
+## Result
 
 ![image](https://user-images.githubusercontent.com/102630199/227568634-a220a5b7-7fb0-44e5-80d7-bef0b916a1ae.png)
 
@@ -219,12 +227,7 @@ Result
 ![image](https://user-images.githubusercontent.com/102630199/227568758-9c6b203d-95fc-44a4-88d8-21ecb24f766f.png)
 
 
-
-
-
-
-
-Usage:
+## Usage:
 
     Put the Arduino Nano 33 BLE Sense board on your wrist or attach it to your body.
     Perform the gestures that you want to train the model with and record them using the board's sensors.
@@ -233,9 +236,9 @@ Usage:
     Run the gesture_recognition() function to start recognizing your gestures in real-time.
     Use the recognized gestures to provide feedback during remote physiotherapy sessions.
 
-Troubleshooting:
+## Troubleshooting:
 
-    If the board fails to connect to your computer via Bluetooth, make sure that the Bluetooth connection is enabled on both devices and that the board is in pairing mode.
+    If the board fails to connect to your computer via Bluetooth, make sure that the Bluetooth connection is enabled on both devices and that the board is in pairing       mode.
     If the board is not recognizing your gestures, try adjusting the sensitivity of the sensors in the GestureRecognition.ino sketch.
     If the machine learning model is not accurately recognizing your gestures, try recording more training data and re-training the model.
     
@@ -247,17 +250,50 @@ Troubleshooting:
 
 •	Hence Arduino Nano 33 BLE Sense board was employed in this project instead.
 
-• Directly connecting the Arduino Nano 33 Ble Sense to Excel via the Microsoft Data Streamer was not feasible as it does not support Nano boards mostly. The board is easily detected by the Excel data streamer but unfortunately does not obtain the data from the serial monitor. 
 
-Possible Solution
+## Conclusion
 
-Via a third-party apps such as PuTTY, we managed to both extract and save the data from the Arduino serial monitor to a csv file format that can be accessed by Excel for processing
-
-
-Conclusion
 Further development using tech gloves and other means of technology, one’s gestures can be accurately recognized and applied in areas like gyms and fitness as well as remote physiotherapy. 
 
 
-Credits:
+## Credits:
 
 This project was inspired by the Arduino Gesture Control Robot project by Dejan Nedelkovski. The machine learning model was trained using the scikit-learn library.
+
+## References
+
+[1] https://github.com/arduino/ArduinoTensorFlowLiteTutorials/
+
+[2] https://docs.arduino.cc/tutorials/nano-33-ble-sense/get-started-with-machine-learning
+
+[3]https://colab.research.google.com/github/arduino/ArduinoTensorFlowLiteTutorials/blob/master/GestureToEmoji/arduino_tinyml_workshop.ipynb#scrollTo=9J33uwpNtAku
+
+[4] https://www.ardu-badge.com/Arduino_TensorFlowLite/zip
+
+[5]https://github.com/ambiot/ambd_arduino/blob/master/Arduino_zip_libraries/Ameba_TensorFlowLite.zip
+
+[6]https://github.com/arduino/ArduinoTensorFlowLiteTutorials/blob/master/GestureToEmoji/ArduinoSketches/Emoji_Button/Emoji_Button.ino
+
+[7] https://blog.tensorflow.org/2019/11/how-to-get-started-with-machine.html
+
+[8] https://thesecmaster.com/install-ubuntu-linux-on-vmware-workstation/
+
+[9] https://github.com/don/tinyml-workshop/blob/master/exercises/exercise8.md
+
+[10] https://github.com/don/tinyml-workshop/blob/master/exercises/exercise9.md
+
+[11] https://forum.arduino.cc/t/how-to-export-data-from-arduino-serial-monitor-to-a-csv-or-txt-file/354651
+
+[12] https://forum.arduino.cc/t/cant-get-arduino-nano-33-ble-senses-data-on-excel-data-streamer/886081/8
+
+[13] https://forum.arduino.cc/t/cant-get-arduino-nano-33-ble-senses-data-on-excel-data-streamer/886081/17
+ 
+[14] https://www.hackster.io/HackingSTEM/stream-data-from-arduino-into-excel-f1bede
+ 
+[15] https://learn.microsoft.com/en-us/microsoft-365/education/data-streamer/connecting-serial-devices
+
+[16] https://www.electromaker.io/project/view/export-data-from-arduino-to-excel-sheet
+
+[17] https://nerdytechy.com/how-to-export-data-from-arduino-to-excel/
+
+
