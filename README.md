@@ -42,9 +42,6 @@ Troubleshooting:
     If the board is not recognizing your gestures, try adjusting the sensitivity of the sensors in the GestureRecognition.ino sketch.
     If the machine learning model is not accurately recognizing your gestures, try recording more training data and re-training the model.
 
-License:
-
-This project is licensed under the MIT License. See the LICENSE file for more information.
 Credits:
 
 This project was inspired by the Arduino Gesture Control Robot project by Dejan Nedelkovski. The machine learning model was trained using the scikit-learn library.
